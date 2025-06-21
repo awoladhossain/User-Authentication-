@@ -8,8 +8,7 @@ export const AuthProvider = ({ children }) => {
     const token =
       localStorage.getItem("token") || sessionStorage.getItem("token");
     if (token) {
-      // optionally decode token or fetch user profile here
-      setUser({ token }); // or setUser(decodedUser)
+      setUser({ token });
     }
   }, []);
   const login = (token, rememberMe) => {

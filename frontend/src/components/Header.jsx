@@ -8,14 +8,14 @@ const Header = () => {
   return (
     <div className="bg-gradient-to-r from-[#1d2b2b] to-[#1d1b2b] text-white">
       <div className="flex justify-between items-center px-6 py-4">
-        {/* Left Section: Logo + Links */}
+        
         <div className="flex items-center gap-10">
           {/* Logo */}
           <div className="flex items-center gap-2 text-xl font-semibold text-white">
             <img src={tasklogo} alt="logo" className="w-28 h-8" />
           </div>
 
-          {/* Navigation Links */}
+
           <div className="flex items-center gap-6 text-sm">
             <Link
               to="/tasks"
@@ -40,7 +40,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right Section: Auth User or Login */}
         <div className="flex items-center gap-4">
           {user ? (
             <div className="flex items-center gap-2 cursor-pointer">
